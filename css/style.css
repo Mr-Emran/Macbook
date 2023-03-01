@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Oswald:wght@200;300;400;500;600;700 & family= Roboto:wght@ 100;300;400;500;700;900 & family= Signika:wght@300;400;500;600;700 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika';
+}
+
+.container{
+    max-width: 1400px;
+    margin: 50px auto;
+    
+}
+p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px; 
+}
+h2{
+font-size: 48px;
+}
+h{
+    font-size: 23px;
+    color: #0071E3;
+    margin-top: 5px;
+}
+.many{
+    margin-top: 48px;
+}
+.flex{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.txt{
+    margin-top: 30px;
+}
+.colored_btn{
+    background-color:#0071E3;
+    color: white;
+    padding: 10px 15px;
+    width: 180px;
+    
+    border: 2px solid  #CFE7FF;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 200ms;
+    
+}
+.activ{
+    background-color:#0071E3;
+    color: white;
+    
+    
+}
+.not_activ{
+    background-color: 
+    #CFE7FF;
+    color: 
+    #797979;
+    
+}
+.colored_btn:hover{
+    border: 2px solid  #007FFF;
+    border-radius: 10px;    
+}
+
+.colored_btn_2{
+    background-color: 
+    #CFE7FF;
+    color: 
+    #797979;
+    margin-left: 10px;
+
+}
+.forum{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.with_btn{
+    width: 370px;
+ padding: 18px 20px;
+ border: 2px solid #CFE7FF;
+ background-color: white;
+ border-radius: 10px;
+ transition: 500ms;
+
+}.border_btn{
+    border: 2px solid#007FFF;
+}
+.with_btn:hover{
+    border: 2px solid 
+#007FFF;
+}
+.cnt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    align-self:flex-start;
+}
+
+
+
+@media (max-width: 760px) {
+    .container{
+     max-width: 1200px;
+margin: 20px;
+        
+    }
+    .forum{
+        margin: 20px;
+        
+    }
+    p{
+       font-size: 15px;
+        text-align: center;
+        margin: 30px auto;
+        /* margin-bottom: 40px; */
+        
+        
+    }
+    
+    h1{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+    h2{
+    font-size: 42px;
+    }
+    h{
+        font-size: 25px;
+        color: #0071E3;
+        margin-top: 5px;
+    }
+    .flex{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .colored_btn{
+        background-color:#0071E3;
+        color: white;
+        padding: 10px 15px;
+        width: 150px;
+        
+        border: 2px solid  #CFE7FF;
+        border-radius: 10px;
+        font-size: 15px;
+        transition: 200ms;
+        
+    }
+    .activ{
+        background-color:#0071E3;
+        color: white;
+        
+        
+        
+    }
+    .not_activ{
+        background-color: 
+        #CFE7FF;
+        color: 
+        #797979;
+        
+        
+    }
+    .colored_btn_2{
+        background-color: 
+        #CFE7FF;
+        color: 
+        #797979;
+        margin-left: 10px;
+        
+    
+    }
+    
+.with_btn{
+    width: 325px;
+ padding: 18px 20px;
+ border: 2px solid 
+ #CFE7FF;
+ background-color: white;
+ border-radius: 10px;
+ transition: 500ms;
+
+}
+
+
+    
+}
+
+@media (max-width: 575px) {
+    
+    
+    .container{
+        
+        margin: 10px;
+    }
+    .flex{
+        display: flex;
+        gap: 40px;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .not_activ{
+        background-color: 
+        #CFE7FF;
+        color: 
+        #797979;
+    
+    }
+    p{
+        width: 400px;
+        text-align: center;
+        margin: 30px auto;
+        /* margin-bottom: 40px; */
+        
+        
+    }
+    .activ{
+        background-color:#0071E3;
+        color: white;
+        
+        
+    }
+    h1{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+    h2{
+    font-size: 40px;
+    }
+    h{
+        font-size: 22px;
+        color: #0071E3;
+        margin-top: 5px;
+    }
+    .flex{
+        display: flex;
+        gap: 40px;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .colored_btn{
+        background-color:#0071E3;
+        color: white;
+        padding: 10px 15px;
+        width: 150px;
+        
+        border: 2px solid  #CFE7FF;
+        border-radius: 10px;
+        font-size: 12px;
+        transition: 200ms;
+        
+    }
+    .colored_btn_2{
+        background-color: 
+        #CFE7FF;
+        color: 
+        #797979;
+        margin-left: 10px;
+    
+    }
+    
+.with_btn{
+    width: 325px;
+ padding: 18px 20px;
+ border: 2px solid 
+ #CFE7FF;
+ background-color: white;
+ border-radius: 10px;
+ transition: 500ms;
+
+}
+}
