@@ -92,3 +92,43 @@ btn4.onclick = () =>{
     btn3.className = "with_btn"
     btn4.className = "with_btn  border_btn"
 }
+
+let body = document.body
+let price = doc.querySelector('.many')
+let modal_wind = doc.querySelector('.modal_div')
+let cros = doc.querySelector('.btn_x')
+let cros2 = doc.querySelector('.btn_x2')
+
+
+let modal = () =>{
+modal_wind.classList.toggle('not_active')
+body.style.overflow = 'hidden'
+}
+price.addEventListener('dblclick', modal)
+
+let modal2 = () =>{
+    modal_wind.classList.toggle('not_active')
+    body.style.overflow = 'auto'
+    }
+
+cros.addEventListener('click' , modal2)
+
+
+let menu_btn = doc.querySelector('.menuButton')
+let c_div = doc.querySelector('.menu_div')
+
+let change = () =>{
+c_div.classList.toggle('not_active')
+body.style.overflow = 'hidden'
+}
+
+menu_btn.addEventListener('click',change)
+let chang2 = () =>{
+    c_div.classList.toggle('not_active')
+    body.style.overflow = 'auto'
+    }
+    
+cros2.addEventListener('click',chang2)  
+
+
+

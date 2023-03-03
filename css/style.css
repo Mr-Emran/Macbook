@@ -7,8 +7,10 @@
 }
 
 .container{
-    max-width: 1400px;
-    margin: 50px auto;
+    max-width: 1200 px;
+    margin: 0 auto;
+    
+   
     
 }
 p{
@@ -19,9 +21,11 @@ p{
     
 }
 h1{
+    
     font-size: 30px;
     text-align: center;
     margin-bottom: 25px; 
+    padding-top: 20px;
 }
 h2{
 font-size: 48px;
@@ -33,6 +37,7 @@ h{
 }
 .many{
     margin-top: 48px;
+    cursor: pointer;
 }
 .flex{
     display: flex;
@@ -84,6 +89,7 @@ h{
 .forum{
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .btns{
@@ -123,7 +129,7 @@ h{
 @media (max-width: 760px) {
     .container{
      max-width: 1200px;
-margin: 20px;
+
         
     }
     .forum{
@@ -214,10 +220,7 @@ margin: 20px;
 @media (max-width: 575px) {
     
     
-    .container{
-        
-        margin: 10px;
-    }
+   
     .flex{
         display: flex;
         gap: 40px;
@@ -234,7 +237,7 @@ margin: 20px;
     
     }
     p{
-        width: 400px;
+        width: 100%;
         text-align: center;
         margin: 30px auto;
         /* margin-bottom: 40px; */
@@ -299,3 +302,229 @@ margin: 20px;
 
 }
 }
+
+.modal_div{
+    
+    display: block;
+    width: 100%;
+    height: 250%;
+    background: rgba(0, 0, 0, 0.47);
+  display: flex;
+  justify-content: center;
+ position: fixed;
+ right: 0;
+ left: 0;
+ z-index: 2;
+ 
+ 
+}
+.modal_applicate{
+  
+
+   
+    background-color:  #F0F0F0;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    transform: rotateY('-10%');
+    border-radius: 6px;
+    transition: all 300ms ease-in-out;
+    
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    
+}
+.modal_h2{
+   margin-bottom: 30px;
+    font-size: 50px;
+}
+.btn_x{
+    
+    width: 0;
+    height: 0;
+  border: none;
+  position: absolute;
+  right: 0;
+  left: 96%;
+  top: 0px;
+}
+.input {
+    width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+  }
+  input{
+    width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    outline: none;
+    color: dimgray;
+  }
+  
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+    color: red;
+  }
+  
+  @keyframes justshake {
+    25% {
+      transform: translateX(5px);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  
+    75% {
+      transform: translateX(5px);
+    }
+  
+    100% {
+      transform: translateX-(5px);
+    }
+  }
+.color_input{
+    
+    background-color: 
+    #0094FF;
+    color: white;
+}
+
+.active{
+    display: block;
+}
+.not_active{
+    display: none;
+}
+
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+z-index: 1;
+gap: 10px;
+
+}
+.container-input {
+    position: relative;
+    margin-top: 20px;
+
+  }
+  
+  .inputt {
+    width: 230px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .inputt:focus {
+    opacity: 1;
+    width: 290px;
+  }
+
+.menuButton {
+    
+    display: flex;
+    margin-top: 13px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12%;
+    color: #090909;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+  }
+  
+  .menuButton:hover {
+    border: 1px solid white;
+  }
+  
+  .menuButton:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  
+  input[type = "checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+    visibility: hidden;
+  }
+  
+  .menuButton span {
+    width: 25px;
+    height: 4px;
+    background: #131313;
+    border-radius: 100px;
+    transition: 0.3s ease;
+  }
+  
+  input[type]:checked ~ span.top {
+    transform: translateY(180%)rotate(45deg);
+    width: 28px;
+  }
+  
+  input[type]:checked ~ span.bot {
+    transform: translateY(-250%) rotate(-45deg);
+    width: 28px;
+    box-shadow: 0 0 10px #495057;
+  }
+  
+  input[type]:checked ~ span.mid {
+    transform: translateX(-22px);
+    opacity: 0;
+  }
+
+  .menu_div{
+    width: 100%;
+    height: 30vh;
+    background: rgb(0, 0, 0);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 2;
+    
+  }
+  .btn_x2{
+   width: 50px;
+    left: 50%;
+    
+   position: relative;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+  }
